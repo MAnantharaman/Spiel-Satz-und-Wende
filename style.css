@@ -1,0 +1,507 @@
+.bachground-gray{
+    background-color: rgb(161, 159, 155);
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+
+.Home{
+    position: absolute;
+    padding: 20px 20px;
+    top: 2%;
+    left: 77%;
+    background: none;
+    border: none;
+}
+
+.Home2{
+    position: absolute;
+    top: 3%;
+    left: 87%;
+    background: none;
+    border: none;
+}
+
+.Titelbild{
+    position: fixed;
+    max-width: 55%;
+    left: 22.25%;
+    top: 15%;
+    height: 300px; 
+    width: 1500px;
+}
+
+.hide{
+    display: none;
+}
+
+.Lupe{
+float: right;
+padding: 20px 20px;
+}
+
+.Text{
+    padding: 15px 15px;
+    text-align: justify;
+    font-family: Arial;
+}
+
+.Zwischenüberschrift{
+    font-size: 15px;
+    margin-top: -10px;
+    text-align: center;
+}
+
+.Überschrift{
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.KlassentreffenButton{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    width: 1500px;
+    max-width: 80%;
+    padding: 10px 100px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    outline: black solid;
+    font-weight: bold;   
+}
+
+.Start{
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    width: 1500px;
+    max-width: 80%;
+    padding: 10px 100px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;   
+}
+
+.Informationen{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    width: 1500px;
+    max-width: 80%;
+    padding: 10px 100px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;   
+}
+
+
+.Weiter{
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    width: 1500px;
+    max-width: 80%;
+    padding: 10px 100px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;
+}
+
+.Klassentreffen1{
+    position: absolute;
+    top: 92%;
+    left: 70%;
+    width: 1500px;
+    max-width: 20%;
+    padding: 10px 10px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;
+}
+
+.BackToStart{
+    position: absolute;
+    top: 92%;
+    left: 40%;
+    width: 1500px;
+    max-width: 20%;
+    padding: 10px 10px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;
+}
+
+.Back1{
+    position: absolute;
+    top: 92%;
+    left: 10%;
+    width: 1500px;
+    max-width: 20%;
+    padding: 10px 10px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 255, 255);
+    outline: black solid;
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    font-weight: bold;
+}
+
+.Feld{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    width: 1500px;
+    height: 1500px;
+    max-height:80% ;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.Feld1{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    width: 1500px;
+    height: 1500px;
+    max-height:80% ;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.header{
+    padding: 10px 15px;
+    border-bottom:2px solid black;
+}
+
+.header01{
+    padding: 10px 15px;
+    border-bottom:2px solid rgb(255, 0, 0);
+}
+
+.Bild1{
+    padding: 10px 15px;
+}
+
+.next{
+    position: absolute;
+    background: none;
+    border: none;
+    left: 80%;
+    top: 92%;
+}
+
+.back{
+    position: absolute;
+    background: none;
+    border: none;
+    left: 10%;
+    top: 92%;
+}
+
+.Entscheidung1{
+position: absolute;
+top: 10%;
+left: 10%;
+border-radius: 10px;
+width: 1500px;
+height: 1500px;
+max-height:80% ;
+max-width: 80%;
+background-color:  rgb(161, 159, 155);
+border-radius: 5px;
+}
+
+
+.Klassentreffen{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 10px;
+    width: 1500px;
+    height: 1500px;
+    max-height:100% ;
+    max-width: 100%;
+    background-color:  rgb(161, 159, 155);
+    border: none;
+    }
+
+.ja1{
+    position: fixed;
+    top: 80%;
+    left: 20%;
+    width: 1500px;
+    max-width: 25%;
+    padding: 10px 10px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(0, 255, 0);
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    outline: black solid;
+    font-weight: bolder;  
+}
+
+.nein1{
+    position: fixed;
+    top: 80%;
+    left: 55%;
+    width: 1500px;
+    max-width: 25%;
+    padding: 10px 10px;
+    color:rgb(7, 7, 7);
+    background-color: rgb(255, 0, 0);
+    border-radius: 10px;
+    font-family: Arial;
+    border: none;
+    outline: black solid;
+    font-weight: bold;  
+}
+
+.Ball{
+    position: absolute;
+    max-width: 50%;
+    left: 25%;
+    top: 27%;
+    height: 300px; 
+    width: 1500px;
+}
+
+.Frage1{
+    font-size: 25px;
+    font-family: Arial;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.titleEntscheidung{
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    top: 10%;
+}
+
+.go{
+    position: fixed;
+    top: 85%;
+    left: 5%;
+    max-width: 10%;
+    background: none;
+    border: none;
+}
+
+
+.Person1{
+    position: fixed;
+    top: 30%;
+    left: 5%;
+    width: 20%;
+    height: 20%;
+    background: none;
+    border: none;
+}
+
+.Name1{
+    position: fixed;
+    font-family: Arial;
+    top: 50%;
+    left: 12.5%;
+}
+
+.Person2{
+    position: fixed;
+    left: 35%;
+    top: 29%;
+    width: 20%;
+    height: 20%;
+    background: none;
+    border: none;
+}
+
+.Name2{
+    position: fixed;
+    font-family: Arial;
+    top: 50%;
+    left: 42%;
+}
+
+.Person3{
+    position: fixed;
+    left: 65%;
+    top: 32%;
+    width: 20%;
+    height: 15%;
+    background: none;
+    border: none;
+}
+
+.Name3{
+    position: fixed;
+    font-family: Arial;
+    top: 50%;
+    left: 73%;
+}
+
+.Person4{
+    position: fixed;
+    left: 5%;
+    top: 62.5%;
+    width: 20%;
+    height: 20%;
+    background: none;
+    border: none;
+
+}
+
+.Name4{
+    position: fixed;
+    font-family: Arial;
+    top: 82.5%;
+    left: 12.5%;
+}
+
+.Person5{
+    position: fixed;
+    left: 35%;
+    top: 62.5%;
+    width: 20%;
+    height: 20%;
+    background: none;
+    border: none;
+}
+
+.Name5{
+    position: fixed;
+    font-family: Arial;
+    top: 82.5%;
+    left: 42%;
+}
+
+.Person6{
+    position: fixed;
+    left: 65%;
+    top: 62.5%;
+    width: 20%;
+    height: 20%;
+    background: none;
+    border: none;
+}
+
+.TextKlassentreffen{
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    border-radius: 10px;
+    width: 1500px;
+    max-width: 80%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.KlassentreffenTitel{
+    font-size: 40px;
+    font-weight: bold;   
+}
+
+.TextK{
+    font-family: Arial;
+    padding: 10px 10px;
+}
+
+.header1{
+    padding: 10px 15px;
+    border-bottom:none;
+}
+.Aussage{
+    font-family: Arial;
+}
+
+.PersonAussage{
+    position: absolute;
+height: 500px;
+max-height: 10%;
+    top: 110%;
+    left: 5%;
+}
+
+.Pfeil{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    background: none;
+    border: none;
+}
+
+.Aussagen {
+    position: absolute;
+    height: 1500px;
+    width: 1500px;
+    max-height: 60%;
+    max-width: 80%;
+    top: 10%;
+    left: 10%;
+    padding: 10px;
+    border: 4px solid #000000;
+    margin:0 auto;
+    margin-bottom: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    background: #fff;}
+    
+    .Aussagen:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 140px;
+    top: 100%;
+    border: 20px solid;
+    border-color: #000000 transparent transparent #000000;}
+    
+    .Aussagen:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 144px;
+    top: 100%;
+    border: 15px solid;
+    border-color: #ffffff transparent transparent #ffffff;}
+
+    .Aussage{
+        font-family: Arial;
+    }
