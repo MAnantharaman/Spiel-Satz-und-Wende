@@ -27,7 +27,7 @@
             ([            
   // cache.addAll(), takes a list of URLs, then fetches them from 
   // the server and adds the response to the cache          
-          'index.html', 'style.css', '*.png', '*.jpeg', 'images/*', 'manifest.json',
+          'index.html', 'script.js', 'style.css', '*.png', '*.jpeg', 'images/*', 'manifest.json',
             ]); }) 
           ); });
   // respond from the cache, or the network

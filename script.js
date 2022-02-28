@@ -11,6 +11,20 @@
 
     const Titelbild = document.getElementById('Titelbild')
 
+    const Textbereich01 = document.getElementById('Textfeld1')
+    const Textbereich02 = document.getElementById('Textfeld2')
+    const Textbereich03 = document.getElementById('Textfeld3')
+    const Textbereich04 = document.getElementById('Textfeld4')
+    const Textbereich05 = document.getElementById('Textfeld5')
+    const Textbereich06 = document.getElementById('Textfeld6')
+    const Textbereich07 = document.getElementById('Textfeld7')
+    const Textbereich08 = document.getElementById('Textfeld8')
+    const Textbereich09 = document.getElementById('Textfeld9')
+    const Textbereich010 = document.getElementById('Textfeld10')
+    const Textbereich011 = document.getElementById('Textfeld11')
+    const Textbereich012 = document.getElementById('Textfeld12')
+    const Textbereich013 = document.getElementById('Textfeld13')
+
     const Zwischenüberschrift = document.getElementById('Zwischenüberschrift')
 
     const Klassentreffen = document.getElementById('Klassentreffen')
@@ -20,18 +34,28 @@
     const Aussagen = document.getElementById('Aussagen')
 
     const Header1 = document.getElementById('header1')
+    const Header102 = document.getElementById('header1.2')
     const Header2 = document.getElementById('header2')
     const Header3 = document.getElementById('header3')
+    const Header302 = document.getElementById('header3.2')
     const Header4 = document.getElementById('header4')
+    const Header402 = document.getElementById('header4.2')
     const Header5 = document.getElementById('header5')
+    const Header502 = document.getElementById('header5.2')
     const Header6 = document.getElementById('header6')
     const Header7 = document.getElementById('header7')
     const Header8 = document.getElementById('header8')
+    const Header802 = document.getElementById('header8.2')
     const Header9 = document.getElementById('header9')
-    const Header10 = document.getElementById('header10')
+    const Header902 = document.getElementById('header9.2')
+    const Header10 = document.getElementById('header10')    
+    const Header1002 = document.getElementById('header10.2')
     const Header11 = document.getElementById('header11')
+    const Header1102 = document.getElementById('header11.2')
     const Header12 = document.getElementById('header12')
+    const Header1202 = document.getElementById('header12.2')
     const Header13 = document.getElementById('header13')
+    const Header1302 = document.getElementById('header13.2')
 
 
     const Bild01 = document.getElementById('Bild1')
@@ -39,7 +63,6 @@
     const Bild03 = document.getElementById('Bild3')
     const Bild04 = document.getElementById('Bild4')
     const Bild05 = document.getElementById('Bild5')
-    const Bild06 = document.getElementById('Bild6')
     const Bild07 = document.getElementById('Bild7')
     const Bild08 = document.getElementById('Bild8')
     const Bild09 = document.getElementById('Bild9')
@@ -47,6 +70,8 @@
     const Bild011 = document.getElementById('Bild11')
     const Bild012 = document.getElementById('Bild12')
     const Bild013 = document.getElementById('Bild13')
+
+    const Info = document.getElementById('InformationFeld')
 
     const Feld01 = document.getElementById('Feld1')
 
@@ -105,10 +130,6 @@
     const Text035 = document.getElementById('Text3.5')
 
     const Text016 = document.getElementById('Text1.6')
-
-    const Text026 = document.getElementById('Text2.6')
-
-    const Text036 = document.getElementById('Text3.6')
 
     const Text017 = document.getElementById('Text1.7')
 
@@ -226,29 +247,11 @@
     const Back025 = document.getElementById('back2.5')
     Back025.addEventListener('click', back25)
 
-    const Next016 = document.getElementById('next1.6')
-    Next016.addEventListener('click', next16)
-
-    const Next026 = document.getElementById('next2.6')
-    Next026.addEventListener('click', next26)
-
-    const Back016 = document.getElementById('back1.6')
-    Back016.addEventListener('click', back16)
-
-    const Back026 = document.getElementById('back2.6')
-    Back026.addEventListener('click', back26)
-
     const Next017 = document.getElementById('next1.7')
     Next017.addEventListener('click', next17)
 
-    const Next027 = document.getElementById('next2.7')
-    Next027.addEventListener('click', next27)
-
     const Back017 = document.getElementById('back1.7')
     Back017.addEventListener('click', back17)
-
-    const Back027 = document.getElementById('back2.7')
-    Back027.addEventListener('click', back27)
 
     const Next018 = document.getElementById('next1.8')
     Next018.addEventListener('click', next18)
@@ -344,12 +347,6 @@
 
     const Weiter07 = document.getElementById('weiter7')
     Weiter07.addEventListener('click', weiter7)
-
-    const Ja1 = document.getElementById('ja1')
-    Ja1.addEventListener('click', ja1)
-
-    const Nein1 = document.getElementById('nein1')
-    Nein1.addEventListener('click', nein1)
 
     const Ja2 = document.getElementById('ja2')
     Ja2.addEventListener('click', ja2)
@@ -486,6 +483,17 @@
 
     const PersonAussage06 = document.getElementById('PersonAussage6')
 
+    function Informationen(){
+        Info.classList.remove('hide')
+        KlassentreffenButton0.classList.add('hide')
+        StartGame.classList.add('hide')
+        InformationenButton.classList.add('hide')
+        Titelbild.classList.add('hide')
+        Home0.classList.remove('hide')
+        Titel.classList.add('hide')
+        Zwischenüberschrift.classList.add('hide')
+    }
+
     function Home(){
         KlassentreffenButton0.classList.remove('hide')
         StartGame.classList.remove('hide')
@@ -544,6 +552,9 @@
         Klassentreffen06.classList.add('hide')
         ZurückAnfang06.classList.add('hide')
         Zurück6.classList.add('hide')
+        Header1.classList.remove('hide')
+        Header102.classList.add('hide')
+         Info.classList.add('hide')
     }
 
     function Home2(){
@@ -555,6 +566,7 @@
         Zwischenüberschrift.classList.remove('hide')
         Home02.classList.add('hide')
         Klassentreffen.classList.add('hide')
+       
     }
 
     function Person1(){
@@ -662,6 +674,34 @@
     Bild01.classList.remove('hide')
     Header1.classList.remove('header01')
     Header1.classList.add('header')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
+    Textbereich02.classList.add('Textfeld')
+    Textbereich02.classList.remove('Textfeld1')
+    Textbereich03.classList.add('Textfeld')
+    Textbereich03.classList.remove('Textfeld1')
+    Textbereich04.classList.add('Textfeld')
+    Textbereich04.classList.remove('Textfeld1')
+    Textbereich05.classList.add('Textfeld')
+    Textbereich05.classList.remove('Textfeld1')
+    Textbereich06.classList.add('Textfeld')
+    Textbereich06.classList.remove('Textfeld1')
+    Textbereich07.classList.add('Textfeld')
+    Textbereich07.classList.remove('Textfeld1')
+    Textbereich08.classList.add('Textfeld')
+    Textbereich08.classList.remove('Textfeld1')
+    Textbereich09.classList.add('Textfeld')
+    Textbereich09.classList.remove('Textfeld1')
+    Textbereich010.classList.add('Textfeld')
+    Textbereich010.classList.remove('Textfeld1')
+    Textbereich011.classList.add('Textfeld')
+    Textbereich011.classList.remove('Textfeld1')
+    Textbereich012.classList.add('Textfeld')
+    Textbereich012.classList.remove('Textfeld1')
+    Textbereich013.classList.add('Textfeld')
+    Textbereich013.classList.remove('Textfeld1')
+    Header1.classList.remove('hide')
+    Header102.classList.add('hide')
     }
 
     function Klassentreffen1(){
@@ -715,6 +755,57 @@ function Klassentreffen2(){
             Home0.classList.add('hide')
             }
 
+            function Klassentreffen4(){
+                Feld011.classList.add('hide')  
+                Klassentreffen04.classList.add('hide')
+                ZurückAnfang04.classList.add('hide')
+                Zurück4.classList.add('hide')
+                Text01.classList.remove('hide')
+                Text02.classList.add('hide')
+                Text03.classList.add('hide')
+                Next01.classList.remove('hide')
+                Next02.classList.add('hide')
+                Back01.classList.add('hide')
+                Back02.classList.add('hide')
+                Klassentreffen.classList.remove('hide')
+                Home02.classList.remove('hide')
+                Home0.classList.add('hide')
+                }
+            
+            function Klassentreffen5(){
+                    Feld012.classList.add('hide')  
+                    Klassentreffen05.classList.add('hide')
+                    ZurückAnfang05.classList.add('hide')
+                    Zurück5.classList.add('hide')
+                    Text01.classList.remove('hide')
+                    Text02.classList.add('hide')
+                    Text03.classList.add('hide')
+                    Next01.classList.remove('hide')
+                    Next02.classList.add('hide')
+                    Back01.classList.add('hide')
+                    Back02.classList.add('hide')
+                    Klassentreffen.classList.remove('hide')
+                    Home02.classList.remove('hide')
+                    Home0.classList.add('hide')
+                    }
+            
+                    function Klassentreffen6(){
+                        Feld013.classList.add('hide')  
+                        Klassentreffen06.classList.add('hide')
+                        ZurückAnfang06.classList.add('hide')
+                        Zurück6.classList.add('hide')
+                        Text01.classList.remove('hide')
+                        Text02.classList.add('hide')
+                        Text03.classList.add('hide')
+                        Next01.classList.remove('hide')
+                        Next02.classList.add('hide')
+                        Back01.classList.add('hide')
+                        Back02.classList.add('hide')
+                        Klassentreffen.classList.remove('hide')
+                        Home02.classList.remove('hide')
+                        Home0.classList.add('hide')
+                        }
+
     function next1(){
     Text01.classList.add('hide')
     Text02.classList.remove('hide')
@@ -745,6 +836,10 @@ function Klassentreffen2(){
     Lupe.classList.remove('hide')
     Header1.classList.add('header01')
     Header1.classList.remove('header')
+    Textbereich01.classList.remove('Textfeld')
+    Textbereich01.classList.add('Textfeld1')
+    Header1.classList.add('hide')
+    Header102.classList.remove('hide')
     }
 
     function back2(){
@@ -759,12 +854,32 @@ function Klassentreffen2(){
     Lupe.classList.add('hide')
     Header1.classList.add('header')
     Header1.classList.remove('header01')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
+    Header1.classList.remove('hide')
+    Header102.classList.add('hide')
     } 
 
     function weiter1(){
     Feld01.classList.add('hide')
     Weiter01.classList.add('hide')
-    Entscheidung01.classList.remove('hide')
+    Feld03.classList.remove('hide')
+    Home0.classList.remove('hide')
+    Text013.classList.remove('hide')
+    Text023.classList.add('hide')
+    Text033.classList.add('hide')
+    Next013.classList.remove('hide')
+    Next023.classList.add('hide')
+    Back013.classList.add('hide')
+    Back023.classList.add('hide')
+    Feld03.classList.remove('Feld1')
+    Feld03.classList.add('Feld')
+    Bild03.classList.remove('hide')
+    Lupe.classList.add('hide')
+    Header3.classList.add('header')
+    Header3.classList.remove('header01')
+    Textbereich03.classList.add('Textfeld')
+    Textbereich03.classList.remove('Textfeld1')
     }
 
     function weiter2(){
@@ -794,12 +909,7 @@ function weiter5(){
     Header6.classList.add('header')
     Header6.classList.remove('header01')
     Text016.classList.remove('hide')
-    Text026.classList.add('hide')
-    Text036.classList.add('hide')
-    Next016.classList.remove('hide')
-    Next026.classList.add('hide')
-    Back016.classList.add('hide')
-    Back026.classList.add('hide')
+    Weiter04.classList.remove('hide')
 }
 
 function weiter6(){
@@ -814,38 +924,6 @@ function weiter7(){
     Entscheidung06.classList.remove('hide')
 }
 
-    function ja1(){
-    Entscheidung01.classList.add('hide')
-    Feld03.classList.remove('hide')
-    Text013.classList.remove('hide')
-    Text033.classList.add('hide')
-    Next013.classList.remove('hide')
-    Next023.classList.add('hide')
-    Back013.classList.add('hide')
-    Back023.classList.add('hide') 
-    Feld03.classList.remove('Feld1')
-    Feld03.classList.add('Feld')
-    Header3.classList.add('header')
-    Header3.classList.remove('header01')
-    Bild03.classList.remove('hide')   
-    }
-
-    function nein1(){
-    Entscheidung01.classList.add('hide')
-    Feld02.classList.remove('hide')
-    Text012.classList.remove('hide')
-    Text022.classList.add('hide')
-    Text032.classList.add('hide')
-    Next012.classList.remove('hide')
-    Next022.classList.add('hide')
-    Back012.classList.add('hide') 
-    Back022.classList.add('hide') 
-    Feld02.classList.remove('Feld1')
-    Feld02.classList.add('Feld')
-    Header2.classList.add('header')
-    Header2.classList.remove('header01') 
-    Bild02.classList.remove('hide')   
-    }
 
     function ja2(){
     Entscheidung02.classList.add('hide')
@@ -862,6 +940,10 @@ function weiter7(){
     Header5.classList.add('header')
     Header5.classList.remove('header01')
     Bild05.classList.remove('hide')
+    Textbereich05.classList.add('Textfeld')
+    Textbereich05.classList.remove('Textfeld1')
+    Header5.classList.remove('hide')
+    Header502.classList.add('hide')
     }
 
     function nein2(){
@@ -879,6 +961,10 @@ function weiter7(){
     Header4.classList.add('header')
     Header4.classList.remove('header01') 
     Bild04.classList.remove('hide')
+    Textbereich04.classList.add('Textfeld')
+    Textbereich04.classList.remove('Textfeld1')
+    Header4.classList.remove('hide')
+    Header402.classList.add('hide')
     }
 
     function ja3(){
@@ -896,23 +982,19 @@ function weiter7(){
     Header7.classList.add('header')
     Header7.classList.remove('header01')
     Bild07.classList.remove('hide')
+    Textbereich07.classList.add('Textfeld')
+    Textbereich07.classList.remove('Textfeld1')
     }
 
     function nein3(){
     Entscheidung03.classList.add('hide')
     Feld06.classList.remove('hide')
     Text016.classList.remove('hide')
-    Text026.classList.add('hide')
-    Text036.classList.add('hide')
-    Next016.classList.remove('hide')
-    Next026.classList.add('hide')
-    Back016.classList.add('hide')
-    Back026.classList.add('hide') 
+    Weiter04.classList.remove('hide')
     Feld06.classList.remove('Feld1')
     Feld06.classList.add('Feld')
     Header6.classList.add('header')
     Header6.classList.remove('header01') 
-    Bild06.classList.remove('hide')
     }
 
     function ja4(){
@@ -930,6 +1012,10 @@ function weiter7(){
     Header8.classList.add('header')
     Header8.classList.remove('header01')
     Bild08.classList.remove('hide')
+    Textbereich08.classList.add('Textfeld')
+    Textbereich08.classList.remove('Textfeld1')
+    Header8.classList.remove('hide')
+    Header802.classList.add('hide')
     }
 
     function nein4(){
@@ -947,6 +1033,12 @@ function weiter7(){
     Header9.classList.add('header')
     Header9.classList.remove('header01') 
     Bild09.classList.remove('hide')
+    Textbereich09.classList.add('Textfeld')
+    Textbereich09.classList.remove('Textfeld1')
+    Header9.classList.remove('hide')
+    Header902.classList.add('hide')
+    Header9.classList.remove('hide')
+    Header902.classList.add('hide')
     }
 
     function nein5(){
@@ -964,6 +1056,10 @@ function weiter7(){
     Header10.classList.add('header')
     Header10.classList.remove('header01') 
     Bild010.classList.remove('hide')
+    Textbereich010.classList.add('Textfeld')
+    Textbereich010.classList.remove('Textfeld1')
+    Header10.classList.remove('hide')
+    Header1002.classList.add('hide')
     }
 
     function ja5(){
@@ -981,6 +1077,10 @@ function weiter7(){
     Header11.classList.add('header')
     Header11.classList.remove('header01')
     Bild011.classList.remove('hide')
+    Textbereich011.classList.add('Textfeld')
+    Textbereich011.classList.remove('Textfeld1')
+    Header11.classList.remove('hide')
+    Header1102.classList.add('hide')
     }
 
 function nein6(){
@@ -998,6 +1098,10 @@ function nein6(){
     Header12.classList.add('header')
     Header12.classList.remove('header01') 
     Bild012.classList.remove('hide')
+    Textbereich012.classList.add('Textfeld')
+    Textbereich012.classList.remove('Textfeld1')
+    Header12.classList.remove('hide')
+    Header1202.classList.add('hide')
     }
 
     function ja6(){
@@ -1015,6 +1119,10 @@ function nein6(){
         Header13.classList.add('header')
         Header13.classList.remove('header01')
         Bild013.classList.remove('hide')
+        Textbereich013.classList.add('Textfeld')
+        Textbereich013.classList.remove('Textfeld1')
+        Header13.classList.remove('hide')
+        Header1302.classList.add('hide')
         }
 
     function next12(){
@@ -1048,6 +1156,8 @@ function nein6(){
     Lupe.classList.remove('hide')
     Header2.classList.add('header01')
     Header2.classList.remove('header')
+    Textbereich02.classList.remove('Textfeld')
+    Textbereich02.classList.add('Textfeld1')
     }
 
     function back22(){
@@ -1062,6 +1172,8 @@ function nein6(){
     Lupe.classList.add('hide')
     Header2.classList.add('header')
     Header2.classList.remove('header01')
+    Textbereich02.classList.add('Textfeld')
+    Textbereich02.classList.remove('Textfeld1')
     }
 
     function Zurück01(){
@@ -1092,6 +1204,8 @@ function nein6(){
     Next025.classList.add('hide')
     Back015.classList.add('hide')
     Back025.classList.add('hide')
+    Textbereich05.classList.add('Textfeld')
+    Textbereich05.classList.remove('Textfeld1')
     }
 
     function Zurück03(){
@@ -1107,6 +1221,8 @@ function nein6(){
     Next028.classList.add('hide')
     Back018.classList.add('hide')
     Back028.classList.add('hide')
+    Textbereich08.classList.add('Textfeld')
+    Textbereich08.classList.remove('Textfeld1')
     }
 
     function Zurück04(){
@@ -1122,6 +1238,8 @@ function nein6(){
     Next0211.classList.add('hide')
     Back0111.classList.add('hide')
     Back0211.classList.add('hide')
+    Textbereich011.classList.add('Textfeld')
+    Textbereich011.classList.remove('Textfeld1')
     }
 
     function Zurück05(){
@@ -1137,6 +1255,8 @@ function nein6(){
         Next0212.classList.add('hide')
         Back0112.classList.add('hide')
         Back0212.classList.add('hide')
+        Textbereich012.classList.add('Textfeld')
+        Textbereich012.classList.remove('Textfeld1')
     }
 
     function Zurück06(){
@@ -1152,6 +1272,8 @@ function nein6(){
         Next0213.classList.add('hide')
         Back0113.classList.add('hide')
         Back0213.classList.add('hide')
+        Textbereich013.classList.add('Textfeld')
+        Textbereich013.classList.remove('Textfeld1')
     }
 
 function ZurückAnfang0(){
@@ -1172,6 +1294,8 @@ function ZurückAnfang0(){
     Header1.classList.add('header')
     Header1.classList.remove('header01')
     Bild01.classList.remove('hide')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
     }
 
     function ZurückAnfang2(){
@@ -1192,6 +1316,8 @@ function ZurückAnfang0(){
     Header1.classList.add('header')
     Header1.classList.remove('header01')
     Bild01.classList.remove('hide')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
     }
 
     function ZurückAnfang3(){
@@ -1212,6 +1338,8 @@ function ZurückAnfang0(){
     Header1.classList.add('header')
     Header1.classList.remove('header01')
     Bild01.classList.remove('hide')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
     }
 
     function ZurückAnfang4(){
@@ -1232,13 +1360,15 @@ function ZurückAnfang0(){
     Header1.classList.add('header')
     Header1.classList.remove('header01')
     Bild01.classList.remove('hide')
+    Textbereich01.classList.add('Textfeld')
+    Textbereich01.classList.remove('Textfeld1')
     }
 
     function ZurückAnfang5(){
         Feld01.classList.remove('hide') 
-        Klassentreffen05.classList.add('hide')
-        ZurückAnfang05.classList.add('hide')
-        Zurück5.classList.add('hide')
+        Klassentreffen06.classList.add('hide')
+        ZurückAnfang06.classList.add('hide')
+        Zurück6.classList.add('hide')
         Feld012.classList.add('hide')
         Text01.classList.remove('hide')
         Text02.classList.add('hide')
@@ -1252,6 +1382,8 @@ function ZurückAnfang0(){
         Header1.classList.add('header')
         Header1.classList.remove('header01')
         Bild01.classList.remove('hide')
+        Textbereich01.classList.add('Textfeld')
+        Textbereich01.classList.remove('Textfeld1')
         }
 
         function ZurückAnfang6(){
@@ -1267,11 +1399,13 @@ function ZurückAnfang0(){
             Next02.classList.add('hide')
             Back01.classList.add('hide')
             Back02.classList.add('hide')
-            Feld013.classList.remove('Feld1')
-            Feld013.classList.add('Feld')
-            Header13.classList.add('header')
-            Header13.classList.remove('header01')
-            Bild013.classList.remove('hide')
+            Feld01.classList.remove('Feld1')
+            Feld01.classList.add('Feld')
+            Header1.classList.add('header')
+            Header1.classList.remove('header01')
+            Bild01.classList.remove('hide')
+            Textbereich01.classList.add('Textfeld')
+            Textbereich01.classList.remove('Textfeld1')
             }
 
 
@@ -1305,6 +1439,10 @@ function ZurückAnfang0(){
     Lupe.classList.remove('hide')
     Header3.classList.add('header01')
     Header3.classList.remove('header')
+    Textbereich03.classList.remove('Textfeld')
+    Textbereich03.classList.add('Textfeld1')
+    Header3.classList.add('hide')
+    Header302.classList.remove('hide')
     }
 
     function back23(){
@@ -1319,6 +1457,10 @@ function ZurückAnfang0(){
     Lupe.classList.add('hide')
     Header3.classList.add('header')
     Header3.classList.remove('header01')
+    Textbereich03.classList.add('Textfeld')
+    Textbereich03.classList.remove('Textfeld1')
+    Header3.classList.remove('hide')
+    Header302.classList.add('hide')
     }
 
 
@@ -1352,6 +1494,10 @@ function ZurückAnfang0(){
     Lupe.classList.remove('hide')
     Header4.classList.add('header01')
     Header4.classList.remove('header')
+    Textbereich04.classList.remove('Textfeld')
+    Textbereich04.classList.add('Textfeld1')
+    Header4.classList.add('hide')
+    Header402.classList.remove('hide')
     }
 
     function back24(){
@@ -1366,6 +1512,10 @@ function ZurückAnfang0(){
     Lupe.classList.add('hide')
     Header4.classList.add('header')
     Header4.classList.remove('header01')
+    Textbereich04.classList.add('Textfeld')
+    Textbereich04.classList.remove('Textfeld1')
+    Header4.classList.remove('hide')
+    Header402.classList.add('hide')
     }
 
     function next15(){
@@ -1399,6 +1549,10 @@ function ZurückAnfang0(){
     Lupe.classList.remove('hide')
     Header5.classList.add('header01')
     Header5.classList.remove('header')
+    Textbereich05.classList.remove('Textfeld')
+    Textbereich05.classList.add('Textfeld1')
+    Header5.classList.add('hide')
+    Header502.classList.remove('hide')
     }
 
     function back25(){
@@ -1413,97 +1567,27 @@ function ZurückAnfang0(){
     Lupe.classList.add('hide')
     Header5.classList.add('header')
     Header5.classList.remove('header01')
-    }
-
-    function next16(){
-    Text016.classList.add('hide')
-    Text026.classList.remove('hide')
-    Next016.classList.add('hide')
-    Next026.classList.remove('hide')
-    Back016.classList.remove('hide')
-    }
-
-    function back16(){
-    Text016.classList.remove('hide')
-    Text026.classList.add('hide')
-    Next016.classList.remove('hide')
-    Next026.classList.add('hide')
-    Back016.classList.add('hide')
-    }
-
-    function next26(){
-    Text026.classList.add('hide')
-    Text036.classList.remove('hide')
-    Next026.classList.add('hide')
-    Back026.classList.remove('hide')
-    Back016.classList.add('hide')
-    Weiter04.classList.remove('hide')
-    Feld06.classList.remove('Feld')
-    Feld06.classList.add('Feld1')
-    Bild06.classList.add('hide')
-    Lupe.classList.remove('hide')
-    Header6.classList.add('header01')
-    Header6.classList.remove('header')
-    }
-
-    function back26(){
-    Text026.classList.remove('hide')
-    Text036.classList.add('hide')
-    Next026.classList.remove('hide')
-    Back026.classList.add('hide')
-    Back016.classList.remove('hide')
-    Feld06.classList.remove('Feld1')
-    Feld06.classList.add('Feld')
-    Bild06.classList.remove('hide')
-    Lupe.classList.add('hide')
-    Header6.classList.add('header')
-    Header6.classList.remove('header01')
+    Textbereich05.classList.add('Textfeld')
+    Textbereich05.classList.remove('Textfeld1')
+    Header5.classList.remove('hide')
+    Header502.classList.add('hide')
     }
 
     function next17(){
     Text017.classList.add('hide')
     Text027.classList.remove('hide')
     Next017.classList.add('hide')
-    Next027.classList.remove('hide')
     Back017.classList.remove('hide')
+    Weiter05.classList.remove('hide')
     }
 
     function back17(){
     Text017.classList.remove('hide')
     Text027.classList.add('hide')
     Next017.classList.remove('hide')
-    Next027.classList.add('hide')
     Back017.classList.add('hide')
     }
 
-    function next27(){
-    Text027.classList.add('hide')
-    Text037.classList.remove('hide')
-    Next027.classList.add('hide')
-    Back027.classList.remove('hide')
-    Back017.classList.add('hide')
-    Weiter05.classList.remove('hide')
-    Feld07.classList.remove('Feld')
-    Feld07.classList.add('Feld1')
-    Bild07.classList.add('hide')
-    Lupe.classList.remove('hide')
-    Header7.classList.add('header01')
-    Header7.classList.remove('header')
-    }
-
-    function back27(){
-    Text027.classList.remove('hide')
-    Text037.classList.add('hide')
-    Next027.classList.remove('hide')
-    Back027.classList.add('hide')
-    Back017.classList.remove('hide')
-    Feld07.classList.remove('Feld1')
-    Feld07.classList.add('Feld')
-    Bild07.classList.remove('hide')
-    Lupe.classList.add('hide')
-    Header7.classList.add('header')
-    Header7.classList.remove('header01')
-    }
 
     function next18(){
     Text018.classList.add('hide')
@@ -1536,6 +1620,10 @@ function ZurückAnfang0(){
     Lupe.classList.remove('hide')
     Header8.classList.add('header01')
     Header8.classList.remove('header')
+    Textbereich08.classList.remove('Textfeld')
+    Textbereich08.classList.add('Textfeld1')
+    Header8.classList.add('hide')
+    Header802.classList.remove('hide')
     }
 
 function back28(){
@@ -1550,6 +1638,10 @@ function back28(){
     Lupe.classList.add('hide')
     Header8.classList.add('header')
     Header8.classList.remove('header01')
+    Textbereich08.classList.add('Textfeld')
+    Textbereich08.classList.remove('Textfeld1')
+    Header8.classList.remove('hide')
+    Header802.classList.add('hide')
     }
 
 function next19(){
@@ -1582,6 +1674,10 @@ function next29(){
     Lupe.classList.remove('hide')
     Header9.classList.add('header01')
     Header9.classList.remove('header')
+    Textbereich09.classList.remove('Textfeld')
+    Textbereich09.classList.add('Textfeld1')
+    Header9.classList.add('hide')
+    Header902.classList.remove('hide')
     }
 
 function back29(){
@@ -1596,6 +1692,10 @@ function back29(){
     Lupe.classList.add('hide')
     Header9.classList.add('header')
     Header9.classList.remove('header01')
+    Textbereich09.classList.add('Textfeld')
+    Textbereich09.classList.remove('Textfeld1')
+    Header9.classList.remove('hide')
+    Header902.classList.add('hide')
     }
 
 function next110(){
@@ -1627,6 +1727,10 @@ function next210(){
     Header10.classList.add('header01')
     Header10.classList.remove('header')
     Weiter07.classList.remove('hide')
+    Textbereich010.classList.remove('Textfeld')
+    Textbereich010.classList.add('Textfeld1')
+    Header10.classList.add('hide')
+    Header1002.classList.remove('hide')
 }
 
 function back210(){
@@ -1641,6 +1745,10 @@ function back210(){
     Lupe.classList.add('hide')
     Header10.classList.add('header')
     Header10.classList.remove('header01')
+    Textbereich010.classList.add('Textfeld')
+    Textbereich010.classList.remove('Textfeld1')
+    Header10.classList.remove('hide')
+    Header1002.classList.add('hide')
     }
 
 
@@ -1675,6 +1783,10 @@ function next211(){
     Lupe.classList.remove('hide')
     Header11.classList.add('header01')
     Header11.classList.remove('header')
+    Textbereich011.classList.remove('Textfeld')
+    Textbereich011.classList.add('Textfeld1')
+    Header11.classList.add('hide')
+    Header1102.classList.remove('hide')
     }
 
 function back211(){
@@ -1689,6 +1801,10 @@ function back211(){
     Lupe.classList.add('hide')
     Header11.classList.add('header')
     Header11.classList.remove('header01')
+    Textbereich011.classList.add('Textfeld')
+    Textbereich011.classList.remove('Textfeld1')
+    Header11.classList.remove('hide')
+    Header1102.classList.add('hide')
     }
 
     function next112(){
@@ -1722,6 +1838,10 @@ function back211(){
         Lupe.classList.remove('hide')
         Header12.classList.add('header01')
         Header12.classList.remove('header')
+        Textbereich012.classList.remove('Textfeld')
+        Textbereich012.classList.add('Textfeld1')
+        Header12.classList.add('hide')
+        Header1202.classList.remove('hide')
         }
     
     function back212(){
@@ -1736,6 +1856,10 @@ function back211(){
         Lupe.classList.add('hide')
         Header12.classList.add('header')
         Header12.classList.remove('header01')
+        Textbereich012.classList.add('Textfeld')
+        Textbereich012.classList.remove('Textfeld1')
+        Header12.classList.remove('hide')
+        Header1202.classList.add('hide')
         }
     
         function next113(){
@@ -1769,6 +1893,10 @@ function back211(){
             Lupe.classList.remove('hide')
             Header13.classList.add('header01')
             Header13.classList.remove('header')
+            Textbereich013.classList.remove('Textfeld')
+            Textbereich013.classList.add('Textfeld1')
+            Header13.classList.add('hide')
+            Header1302.classList.remove('hide')
             }
         
         function back213(){
@@ -1783,6 +1911,10 @@ function back211(){
             Lupe.classList.add('hide')
             Header13.classList.add('header')
             Header13.classList.remove('header01')
+            Textbereich013.classList.add('Textfeld')
+            Textbereich013.classList.remove('Textfeld1')
+            Header13.classList.remove('hide')
+            Header1302.classList.add('hide')
             }
         
         
