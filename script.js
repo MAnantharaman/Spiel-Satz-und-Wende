@@ -25,6 +25,13 @@
     const Textbereich012 = document.getElementById('Textfeld12')
     const Textbereich013 = document.getElementById('Textfeld13')
 
+    const Scroll01 = document.getElementById('Scroll1')
+    const Scroll02 = document.getElementById('Scroll2')
+    const Scroll03 = document.getElementById('Scroll3')
+    const Scroll04 = document.getElementById('Scroll4')
+    const Scroll05 = document.getElementById('Scroll5')
+    const Scroll06 = document.getElementById('Scroll6')
+
     const Zwischenüberschrift = document.getElementById('Zwischenüberschrift')
 
     const Klassentreffen = document.getElementById('Klassentreffen')
@@ -576,6 +583,7 @@
         PersonAussage01.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll01.classList.remove('hide')
     }
 
     function Person2(){
@@ -585,6 +593,7 @@
         PersonAussage02.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll02.classList.remove('hide')
     }
 
     function Person3(){
@@ -594,6 +603,7 @@
         PersonAussage03.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll03.classList.remove('hide')
     }
 
     function Person4(){
@@ -603,6 +613,7 @@
         PersonAussage04.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll04.classList.remove('hide')
     }
 
     function Person5(){
@@ -612,6 +623,7 @@
         PersonAussage05.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll05.classList.remove('hide')
     }
 
     function Person6(){
@@ -621,6 +633,7 @@
         PersonAussage06.classList.remove('hide')
         Pfeil.classList.remove('hide')
         Home02.classList.add('hide')
+        Scroll06.classList.remove('hide')
     }
 
     function Pfeil0(){
@@ -640,6 +653,12 @@
         Aussage06.classList.add('hide')
         PersonAussage06.classList.add('hide') 
         Home02.classList.remove('hide')
+        Scroll01.classList.add('hide')
+        Scroll02.classList.add('hide')
+        Scroll03.classList.add('hide')
+        Scroll04.classList.add('hide')
+        Scroll05.classList.add('hide')
+        Scroll06.classList.add('hide')
     }
 
     function KlassentreffenButton(){
