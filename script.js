@@ -1366,9 +1366,9 @@ function ZurückAnfang0(){
 
     function ZurückAnfang5(){
         Feld01.classList.remove('hide') 
-        Klassentreffen06.classList.add('hide')
-        ZurückAnfang06.classList.add('hide')
-        Zurück6.classList.add('hide')
+        Klassentreffen05.classList.add('hide')
+        ZurückAnfang05.classList.add('hide')
+        Zurück5.classList.add('hide')
         Feld012.classList.add('hide')
         Text01.classList.remove('hide')
         Text02.classList.add('hide')
