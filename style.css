@@ -10,7 +10,7 @@
     position: absolute;
     padding: 20px 20px;
     top: 2%;
-    left: 77%;
+    right:15%;
     background: none;
     border: none;
 }
@@ -48,12 +48,17 @@
     border-radius: 10px;
     width: 1500px;
     max-width: 80%;
+    height: 1500px;
+    max-height: 80%;
     background-color: rgb(255, 255, 255);
     border-radius: 5px;
     border: 2px solid black;
     padding: 10px;
     font-size: 15px;
     font-family: Arial;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .hide{
@@ -196,6 +201,26 @@ padding: 10px 10px;
     font-family: Arial;
     border: none;
     font-weight: bold;
+}
+
+.AnleitungFeld{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    border-radius: 10px;
+    width: 1500px;
+    height: 1500px;
+    max-height:80% ;
+    max-width: 80%;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    border: 2px solid black;
+    font-family: Arial;
+    font-size: 15px;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-y: auto;
 }
 
 .Feld{
@@ -508,6 +533,14 @@ max-height: 10%;
     background: none;
     border: none;
 }
+.Pfeil2{
+    position: absolute;
+    padding: 20px 20px;
+    top: 2%;
+    left:15%;
+    background: none;
+    border: none;
+}
 
 .Aussagen {
     position: absolute;
@@ -587,3 +620,69 @@ max-height: 10%;
         overflow-x: auto;
         overflow-y: auto;
     } 
+
+
+    p.bubble {
+        position: absolute;
+        top: 10%;
+        height: 65%;
+        left: 10%;
+        width: 1500px;
+        max-width: 78%;
+        text-align: center;
+        line-height: 1.4em;
+        background-color: #fff;
+        border: 3px solid rgb(0, 0, 0);
+        border-radius: 20px;
+        font-family: sans-serif;
+        padding: 10px;
+        font-size: large;
+    }
+    
+    p.thought {
+        border-radius: 30px;
+        height: 60%;	
+        left: 10%;
+        width: 1500px;
+        max-width: 78%;
+    }
+    
+    p.bubble:before,
+    p.bubble:after {
+        content: ' ';
+        position: absolute;
+        width: 0;
+        height: 0;
+    }
+    
+    p.thought:before,
+    p.thought:after {
+        left: 10px;
+        bottom: -30px;
+        width: 40px;
+        height: 40px;
+        background-color: #fff;
+        border: 3px solid rgb(0, 0, 0);
+        -webkit-border-radius: 28px;
+        -moz-border-radius: 28px;
+        border-radius: 28px;
+    }
+    
+    p.thought:after {
+        width: 20px;
+        height: 20px;
+        left: 5px;
+        bottom: -40px;
+        -webkit-border-radius: 18px;
+        -moz-border-radius: 18px;
+        border-radius: 18px;
+    }
+
+    .Anleitung{
+        position: absolute;
+        padding: 20px 20px;
+        top: 2%;
+        left: 15%;
+        background: none;
+        border: none;
+    }

@@ -80,6 +80,8 @@
 
     const Info = document.getElementById('InformationFeld')
 
+    const Gedankenblase1 = document.getElementById('Gedankenblase')
+
     const Feld01 = document.getElementById('Feld1')
 
     const Feld02 = document.getElementById('Feld2')
@@ -105,6 +107,8 @@
     const Feld012 = document.getElementById('Feld12')
 
     const Feld013 = document.getElementById('Feld13')
+
+    const AnleitungFeld = document.getElementById('AnleitungFeld')
 
     const Text01 = document.getElementById('Text1')
 
@@ -333,6 +337,8 @@
     const Back0213 = document.getElementById('back2.13')
     Back0213.addEventListener('click', back213)
 
+    const Weiter00 = document.getElementById('weiter0')
+    Weiter00.addEventListener('click', weiter0)
 
     const Weiter01 = document.getElementById('weiter1')
     Weiter01.addEventListener('click', weiter1)
@@ -354,6 +360,9 @@
 
     const Weiter07 = document.getElementById('weiter7')
     Weiter07.addEventListener('click', weiter7)
+
+    const Anleitung01 = document.getElementById('Anleitung')
+    Anleitung01.addEventListener('click', Anleitung)
 
     const Ja2 = document.getElementById('ja2')
     Ja2.addEventListener('click', ja2)
@@ -460,6 +469,9 @@
     const Pfeil = document.getElementById('Pfeil')
     Pfeil.addEventListener('click', Pfeil0)
 
+    const Pfeil02 = document.getElementById('Pfeil2')
+    Pfeil02.addEventListener('click', Pfeil2)
+
     const Home0 = document.getElementById('Home')
     Home0.addEventListener('click', Home)
 
@@ -490,6 +502,23 @@
 
     const PersonAussage06 = document.getElementById('PersonAussage6')
 
+
+    function Anleitung(){
+        AnleitungFeld.classList.remove('hide')
+        Info.classList.add('hide')
+        Home0.classList.add('hide')
+        Pfeil02.classList.remove('hide')
+        Anleitung01.classList.add('hide')
+    }
+
+    function Pfeil2(){
+        AnleitungFeld.classList.add('hide')
+        Info.classList.remove('hide')
+        Home0.classList.remove('hide')
+        Pfeil02.classList.add('hide')
+        Anleitung01.classList.remove('hide')
+    }
+
     function Informationen(){
         Info.classList.remove('hide')
         KlassentreffenButton0.classList.add('hide')
@@ -499,6 +528,7 @@
         Home0.classList.remove('hide')
         Titel.classList.add('hide')
         Zwischenüberschrift.classList.add('hide')
+        Anleitung01.classList.remove('hide')
     }
 
     function Home(){
@@ -541,6 +571,7 @@
         Weiter05.classList.add('hide')
         Weiter06.classList.add('hide')
         Weiter07.classList.add('hide')
+        Weiter00.classList.add('hide')
         Klassentreffen01.classList.add('hide')
         ZurückAnfang.classList.add('hide')
         Zurück1.classList.add('hide')
@@ -562,6 +593,8 @@
         Header1.classList.remove('hide')
         Header102.classList.add('hide')
          Info.classList.add('hide')
+         Gedankenblase1.classList.add('hide')
+         Anleitung01.classList.add('hide')
     }
 
     function Home2(){
@@ -676,7 +709,8 @@
     KlassentreffenButton0.classList.add('hide')
     StartGame.classList.add('hide')
     InformationenButton.classList.add('hide')
-    Feld01.classList.remove('hide')
+    Gedankenblase1.classList.remove('hide')
+    Weiter00.classList.remove('hide')
     Titelbild.classList.add('hide')
     Titel.classList.add('hide')
     Text01.classList.remove('hide')
@@ -721,6 +755,21 @@
     Textbereich013.classList.remove('Textfeld1')
     Header1.classList.remove('hide')
     Header102.classList.add('hide')
+    }
+
+    function weiter0(){
+        Gedankenblase1.classList.add('hide')
+        Feld01.classList.remove('hide')
+        Titelbild.classList.add('hide')
+        Titel.classList.add('hide')
+        Text01.classList.remove('hide')
+        Text02.classList.add('hide')
+        Text03.classList.add('hide')
+        Next01.classList.remove('hide')
+        Next02.classList.add('hide')
+        Back01.classList.add('hide')
+        Back02.classList.add('hide')
+        Weiter00.classList.add('hide')
     }
 
     function Klassentreffen1(){
@@ -831,6 +880,7 @@ function Klassentreffen2(){
     Next01.classList.add('hide')
     Next02.classList.remove('hide')
     Back01.classList.remove('hide')
+    Textbereich01.scrollTo({top:0, left:0})
     }
 
     function back1(){
@@ -839,6 +889,7 @@ function Klassentreffen2(){
     Next01.classList.remove('hide')
     Next02.classList.add('hide')
     Back01.classList.add('hide')
+    Textbereich01.scrollTo({top:0, left:0})
     }
 
     function next2(){
@@ -859,6 +910,7 @@ function Klassentreffen2(){
     Textbereich01.classList.add('Textfeld1')
     Header1.classList.add('hide')
     Header102.classList.remove('hide')
+    Textbereich01.scrollTo({top:0, left:0})
     }
 
     function back2(){
@@ -877,6 +929,7 @@ function Klassentreffen2(){
     Textbereich01.classList.remove('Textfeld1')
     Header1.classList.remove('hide')
     Header102.classList.add('hide')
+    Textbereich01.scrollTo({top:0, left:0})
     } 
 
     function weiter1(){
@@ -1150,6 +1203,7 @@ function nein6(){
     Next012.classList.add('hide')
     Next022.classList.remove('hide')
     Back012.classList.remove('hide')
+    Textbereich02.scrollTo({top:0, left:0})
     }
 
     function back12(){
@@ -1158,6 +1212,7 @@ function nein6(){
     Next012.classList.remove('hide')
     Next022.classList.add('hide')
     Back012.classList.add('hide')
+    Textbereich02.scrollTo({top:0, left:0})
     }
 
     function next22(){
@@ -1177,6 +1232,7 @@ function nein6(){
     Header2.classList.remove('header')
     Textbereich02.classList.remove('Textfeld')
     Textbereich02.classList.add('Textfeld1')
+    Textbereich02.scrollTo({top:0, left:0})
     }
 
     function back22(){
@@ -1193,6 +1249,7 @@ function nein6(){
     Header2.classList.remove('header01')
     Textbereich02.classList.add('Textfeld')
     Textbereich02.classList.remove('Textfeld1')
+    Textbereich02.scrollTo({top:0, left:0})
     }
 
     function Zurück01(){
@@ -1434,6 +1491,7 @@ function ZurückAnfang0(){
     Next013.classList.add('hide')
     Next023.classList.remove('hide')
     Back013.classList.remove('hide')
+    Textbereich03.scrollTo({top:0, left:0})
     }
 
     function back13(){
@@ -1442,6 +1500,7 @@ function ZurückAnfang0(){
     Next013.classList.remove('hide')
     Next023.classList.add('hide')
     Back013.classList.add('hide')
+    Textbereich03.scrollTo({top:0, left:0})
     }
 
     function next23(){
@@ -1462,6 +1521,7 @@ function ZurückAnfang0(){
     Textbereich03.classList.add('Textfeld1')
     Header3.classList.add('hide')
     Header302.classList.remove('hide')
+    Textbereich03.scrollTo({top:0, left:0})
     }
 
     function back23(){
@@ -1480,6 +1540,7 @@ function ZurückAnfang0(){
     Textbereich03.classList.remove('Textfeld1')
     Header3.classList.remove('hide')
     Header302.classList.add('hide')
+    Textbereich03.scrollTo({top:0, left:0})
     }
 
 
@@ -1489,6 +1550,7 @@ function ZurückAnfang0(){
     Next014.classList.add('hide')
     Next024.classList.remove('hide')
     Back014.classList.remove('hide')
+    Textbereich04.scrollTo({top:0, left:0})
     }
 
     function back14(){
@@ -1497,6 +1559,7 @@ function ZurückAnfang0(){
     Next014.classList.remove('hide')
     Next024.classList.add('hide')
     Back014.classList.add('hide')
+    Textbereich04.scrollTo({top:0, left:0})
     }
 
     function next24(){
@@ -1517,6 +1580,7 @@ function ZurückAnfang0(){
     Textbereich04.classList.add('Textfeld1')
     Header4.classList.add('hide')
     Header402.classList.remove('hide')
+    Textbereich04.scrollTo({top:0, left:0})
     }
 
     function back24(){
@@ -1535,6 +1599,7 @@ function ZurückAnfang0(){
     Textbereich04.classList.remove('Textfeld1')
     Header4.classList.remove('hide')
     Header402.classList.add('hide')
+    Textbereich04.scrollTo({top:0, left:0})
     }
 
     function next15(){
@@ -1543,6 +1608,7 @@ function ZurückAnfang0(){
     Next015.classList.add('hide')
     Next025.classList.remove('hide')
     Back015.classList.remove('hide')
+    Textbereich05.scrollTo({top:0, left:0})
     }
 
     function back15(){
@@ -1551,6 +1617,7 @@ function ZurückAnfang0(){
     Next015.classList.remove('hide')
     Next025.classList.add('hide')
     Back015.classList.add('hide')
+    Textbereich05.scrollTo({top:0, left:0})
     }
 
     function next25(){
@@ -1572,6 +1639,7 @@ function ZurückAnfang0(){
     Textbereich05.classList.add('Textfeld1')
     Header5.classList.add('hide')
     Header502.classList.remove('hide')
+    Textbereich05.scrollTo({top:0, left:0})
     }
 
     function back25(){
@@ -1590,6 +1658,7 @@ function ZurückAnfang0(){
     Textbereich05.classList.remove('Textfeld1')
     Header5.classList.remove('hide')
     Header502.classList.add('hide')
+    Textbereich05.scrollTo({top:0, left:0})
     }
 
     function next17(){
@@ -1598,6 +1667,7 @@ function ZurückAnfang0(){
     Next017.classList.add('hide')
     Back017.classList.remove('hide')
     Weiter05.classList.remove('hide')
+    Textbereich07.scrollTo({top:0, left:0})
     }
 
     function back17(){
@@ -1605,6 +1675,7 @@ function ZurückAnfang0(){
     Text027.classList.add('hide')
     Next017.classList.remove('hide')
     Back017.classList.add('hide')
+    Textbereich07.scrollTo({top:0, left:0})
     }
 
 
@@ -1614,6 +1685,7 @@ function ZurückAnfang0(){
     Next018.classList.add('hide')
     Next028.classList.remove('hide')
     Back018.classList.remove('hide')
+    Textbereich08.scrollTo({top:0, left:0})
     }
 
     function back18(){
@@ -1622,6 +1694,7 @@ function ZurückAnfang0(){
     Next018.classList.remove('hide')
     Next028.classList.add('hide')
     Back018.classList.add('hide')
+    Textbereich08.scrollTo({top:0, left:0})
     }
 
     function next28(){
@@ -1643,6 +1716,7 @@ function ZurückAnfang0(){
     Textbereich08.classList.add('Textfeld1')
     Header8.classList.add('hide')
     Header802.classList.remove('hide')
+    Textbereich08.scrollTo({top:0, left:0})
     }
 
 function back28(){
@@ -1661,6 +1735,7 @@ function back28(){
     Textbereich08.classList.remove('Textfeld1')
     Header8.classList.remove('hide')
     Header802.classList.add('hide')
+    Textbereich08.scrollTo({top:0, left:0})
     }
 
 function next19(){
@@ -1669,6 +1744,7 @@ function next19(){
     Next019.classList.add('hide')
     Next029.classList.remove('hide')
     Back019.classList.remove('hide')
+    Textbereich09.scrollTo({top:0, left:0})
     }
 
 function back19(){
@@ -1677,6 +1753,7 @@ function back19(){
     Next019.classList.remove('hide')
     Next029.classList.add('hide')
     Back019.classList.add('hide')
+    Textbereich09.scrollTo({top:0, left:0})
     }
 
 function next29(){
@@ -1697,6 +1774,7 @@ function next29(){
     Textbereich09.classList.add('Textfeld1')
     Header9.classList.add('hide')
     Header902.classList.remove('hide')
+    Textbereich09.scrollTo({top:0, left:0})
     }
 
 function back29(){
@@ -1715,6 +1793,7 @@ function back29(){
     Textbereich09.classList.remove('Textfeld1')
     Header9.classList.remove('hide')
     Header902.classList.add('hide')
+    Textbereich09.scrollTo({top:0, left:0})
     }
 
 function next110(){
@@ -1723,6 +1802,7 @@ function next110(){
     Next0110.classList.add('hide')
     Next0210.classList.remove('hide')
     Back0110.classList.remove('hide')
+    Textbereich010.scrollTo({top:0, left:0})
     }
 
 function back110(){
@@ -1731,6 +1811,7 @@ function back110(){
     Next0110.classList.remove('hide')
     Next0210.classList.add('hide')
     Back0110.classList.add('hide')
+    Textbereich010.scrollTo({top:0, left:0})
     }
 
 function next210(){
@@ -1750,6 +1831,7 @@ function next210(){
     Textbereich010.classList.add('Textfeld1')
     Header10.classList.add('hide')
     Header1002.classList.remove('hide')
+    Textbereich010.scrollTo({top:0, left:0})
 }
 
 function back210(){
@@ -1768,6 +1850,7 @@ function back210(){
     Textbereich010.classList.remove('Textfeld1')
     Header10.classList.remove('hide')
     Header1002.classList.add('hide')
+    Textbereich010.scrollTo({top:0, left:0})
     }
 
 
@@ -1777,6 +1860,7 @@ function next111(){
     Next0111.classList.add('hide')
     Next0211.classList.remove('hide')
     Back0111.classList.remove('hide')
+    Textbereich011.scrollTo({top:0, left:0})
     }
 
 function back111(){
@@ -1785,6 +1869,7 @@ function back111(){
     Next0111.classList.remove('hide')
     Next0211.classList.add('hide')
     Back0111.classList.add('hide')
+    Textbereich011.scrollTo({top:0, left:0})
     }
 
 function next211(){
@@ -1806,6 +1891,7 @@ function next211(){
     Textbereich011.classList.add('Textfeld1')
     Header11.classList.add('hide')
     Header1102.classList.remove('hide')
+    Textbereich011.scrollTo({top:0, left:0})
     }
 
 function back211(){
@@ -1824,6 +1910,7 @@ function back211(){
     Textbereich011.classList.remove('Textfeld1')
     Header11.classList.remove('hide')
     Header1102.classList.add('hide')
+    Textbereich011.scrollTo({top:0, left:0})
     }
 
     function next112(){
@@ -1832,6 +1919,7 @@ function back211(){
         Next0112.classList.add('hide')
         Next0212.classList.remove('hide')
         Back0112.classList.remove('hide')
+        Textbereich012.scrollTo({top:0, left:0})
         }
     
     function back112(){
@@ -1840,6 +1928,7 @@ function back211(){
         Next0112.classList.remove('hide')
         Next0212.classList.add('hide')
         Back0112.classList.add('hide')
+        Textbereich012.scrollTo({top:0, left:0})
         }
     
     function next212(){
@@ -1861,6 +1950,7 @@ function back211(){
         Textbereich012.classList.add('Textfeld1')
         Header12.classList.add('hide')
         Header1202.classList.remove('hide')
+        Textbereich012.scrollTo({top:0, left:0})
         }
     
     function back212(){
@@ -1879,6 +1969,7 @@ function back211(){
         Textbereich012.classList.remove('Textfeld1')
         Header12.classList.remove('hide')
         Header1202.classList.add('hide')
+        Textbereich012.scrollTo({top:0, left:0})
         }
     
         function next113(){
@@ -1887,6 +1978,7 @@ function back211(){
             Next0113.classList.add('hide')
             Next0213.classList.remove('hide')
             Back0113.classList.remove('hide')
+            Textbereich013.scrollTo({top:0, left:0})
             }
         
         function back113(){
@@ -1895,6 +1987,7 @@ function back211(){
             Next0113.classList.remove('hide')
             Next0213.classList.add('hide')
             Back0113.classList.add('hide')
+            Textbereich013.scrollTo({top:0, left:0})
             }
         
         function next213(){
@@ -1916,6 +2009,7 @@ function back211(){
             Textbereich013.classList.add('Textfeld1')
             Header13.classList.add('hide')
             Header1302.classList.remove('hide')
+            Textbereich013.scrollTo({top:0, left:0})
             }
         
         function back213(){
@@ -1934,6 +2028,7 @@ function back211(){
             Textbereich013.classList.remove('Textfeld1')
             Header13.classList.remove('hide')
             Header1302.classList.add('hide')
+            Textbereich013.scrollTo({top:0, left:0})
             }
         
         
